@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" /> 
+<title>ESPN.com</title>
+	
+<style type="text/css">
+
+	#nav {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 54px;
+	background-image: url(nav_bg.png);
+	background-repeat: repeat-x;
+	}
+	
+	
+	
+	#navmenu {
+		width: 125px;
+		margin-left: 10px;
+		display: inline;
+	}
+	
+	#myespn {
+		width: 250px;
+		margin-right: 10px;
+		margin-left: auto;
+		display: inline;
+	}
+	
+	.falloff1, .falloff2 {
+		
+	}
+
+	#banner {
+		margin-left: 10px; 
+		margin-top: 10px;
+		width: 1000px;  
+	}
+	#poll {
+	margin-right: 30px;
+	width: 340px;
+	border: medium solid #000;
+	vertical-align: top;
+	float: right;
+	}
+	#poll2 {
+	margin-right: 30px;
+	width: 340px;
+	border: medium solid #000;
+	vertical-align: top;
+	float: left;
+	display: none;
+	}
+	#bannertext {
+		padding:20px;
+		width:370px; 
+		float:left;
+		margin-left:10px; 
+		background-color:#EEE; 
+	}  
+
+	
+
+	#banner img { 
+		max-width:1000px; 
+		max-height:300px; 
+	}
+ 
+	#main {
+		margin-left:auto;
+		margin-right:auto;
+		width:1000px; 
+	}    
+
+	#main-content {
+		padding:20px;
+		width:625px; 
+		float:left;
+	}  
+
+	#widget-container {
+		padding:15px;
+		width:280px; 
+		float:right;
+	}   
+
+	.widget-content {
+		margin:20px; 
+		padding:1px;
+		width:250px;
+		background-color:#DDDDDD; 
+	}    
+
+	.widget-title {
+		font-weight:bold;
+		padding:10px;
+		background-color:#EEEEEE;  
+	}    
+
+	.widget-text {
+		padding:10px;
+		background-color:#FCFCFC;   
+	}    
+	.toph {
+		width: 500px;
+		margin-left: -250px;
+		margin-top: -15px;
+	}
+	.ad320 {
+		display: none;
+	}
+
+	@media (min-width: 768px) and (max-width: 999px) {
+		#nav {
+			margin-left:auto;
+			margin-right:auto;
+			width:100%; 
+		}
+		
+		.falloff1 {
+			display: none;			
+		}
+
+		#banner { 
+			width:740px;
+		}
+		#bannertext {
+			width:350px; 
+		}  
+		#banner img { 
+			max-width:740px; 
+			max-height:252px; 
+		}
+		#poll {
+			width: 300px;
+			height: 240px;
+			border: medium solid #000;
+			vertical-align: top;
+			float: right;
+		}
+
+		
+		#main { 
+			width:740px; 
+		}   
+		         
+		#main-content { 
+			width:450px; 
+			float:left; 
+		}
+		
+		#widget-container { 
+			width:200px; 
+			float:right; 
+		}
+		
+		.widget-content { 
+			width:160px; 
+		}
+		.fullad{
+			display: none;
+		}
+		.toph {
+		width: 160px;
+		margin-left: 20px;
+	}
+
+	} 
+
+	@media (min-width: 321px) and (max-width: 767px) {
+		#nav {
+			margin-left:auto;
+			margin-right:auto;
+			width:100%; 
+		}    
+		
+		.falloff1, .falloff2 {
+			display: none;			
+		}
+
+		#poll {
+			display: none;			
+		}
+		#poll2 {
+			display: block;		
+			margin-left: 0px;
+			margin-right: 0px;
+			margin: 0px;
+			padding: 0px;
+			width: 445px;
+			margin-right: auto;	
+			margin-left: auto;	
+		}
+		
+		#banner { 
+			width:400px; 
+			float: left;
+			margin-left: 25px;
+			margin-right: 0px;
+		}
+		
+		#banner img { 
+			max-width:400px; 
+			max-height:385px; 
+		}
+		
+		#main { 
+			width:450px; 
+		}  
+		          
+		#main-content { 
+			width:400px;
+		}
+		
+		#widget-container { 
+			width:400px;
+		}
+		
+		.widget-content { 
+			width:120px; 
+			margin:5px; 
+			float:left;
+		}
+		
+		.widget-text { 
+			display:none;
+		} 
+		.fullad{
+			display: none;
+		}
+		#bannertext { 
+			display: block;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin: 0px;
+			padding: 10px;
+			width: 430px;
+			float: left;
+		} 
+		.toph {
+		width: 120px;
+		margin-left: 0px;
+		margin: 5px;
+		float: left;
+	}
+
+
+	}
+
+	@media (max-width: 320px) {
+		#nav {
+			margin-left:auto;
+			margin-right:auto;
+			width:100%; 
+		}
+		.falloff1, .falloff2, .falloff3 {
+			display: none;			
+		}
+
+		#poll {
+			display: none;			
+		}
+
+
+		#poll2 {
+			margin-left: -20px;
+			display:block; 
+			width: 284px;
+			float: left;
+		}
+		    
+		#banner { 
+			width:275px; 
+			margin-left: -15px;
+		}
+		#banner img { 
+			max-width:300px; 
+			max-height:185px; 
+		}
+		#main { 
+			width:250px;
+		}            
+		#main-content { 
+			width:100%;
+			padding:0px;
+		}
+		#widget-container { 
+			width:250px; 
+			padding:0px; 
+		}
+		.widget-content { 
+			width:285px; 
+			margin:5px;
+			margin-left: -20px;
+		}
+		.widget-text { 
+			display:none; 
+		} 
+		.fullad{
+			display: none;
+		}
+		#bannertext { 
+			display:block; 
+			margin-left: -20px;
+			width: 250px;
+		} 
+		.ad320 {
+			display: block;
+			padding: 0px;
+			margin-left: -25px;
+		}
+
+	}
+	body {
+	margin-top: 0px;
+	background-image: url(bg.png);
+	background-position:center;
+	background-repeat: repeat-y;
+}
+</style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('nba_over.png')">
+<div id="nav">
+	<div id="navmenu">
+    	<img src="espn_logo.png">
+   	  <a href="#"><img src="nba.png" name="nba" class="falloff2" id="nba" onMouseDown="MM_swapImage('nba','','nba_down.png',0)" onMouseUp="MM_swapImage('nba','','nba_over.png',0)" onMouseOver="MM_swapImage('nba','','nba_over.png',1)" onMouseOut="MM_swapImgRestore()"></a>
+   	  <a href="#"><img src="mlb.png" name="mlb" class="falloff2" id="mlb" onMouseDown="MM_swapImage('mlb','','mlb_down.png',0)" onMouseUp="MM_swapImage('mlb','','mlb_over.png',0)" onMouseOver="MM_swapImage('mlb','','mlb_over.png',1)" onMouseOut="MM_swapImgRestore()"></a>
+   	  <a href="#"><img src="nhl.png" name="nhl" class="falloff1" id="nhl" onMouseDown="MM_swapImage('nhl','','nhl_down.png',0)" onMouseUp="MM_swapImage('nhl','','nhl_over.png',0)" onMouseOver="MM_swapImage('nhl','','nhl_over.png',1)" onMouseOut="MM_swapImgRestore()"></a>
+   	  <a href="#"><img src="nfl.png" name="nfl" class="falloff2" id="nfl" onMouseDown="MM_swapImage('nfl','','nfl_down.png',0)" onMouseUp="MM_swapImage('nfl','','nfl_over.png',0)" onMouseOver="MM_swapImage('nfl','','nfl_over.png',1)" onMouseOut="MM_swapImgRestore()"></a>
+   	  <a href="#"><img src="news.png" name="news" class="falloff3" id="news" onMouseDown="MM_swapImage('news','','news_down.png',0)" onMouseUp="MM_swapImage('news','','news_over.png',0)" onMouseOver="MM_swapImage('news','','news_over.png',1)" onMouseOut="MM_swapImgRestore()"></a>
+   	  <a href="#"><img src="scores.png" name="scores" class="falloff1" id="scores" onMouseDown="MM_swapImage('scores','','scores_down.png',0)" onMouseUp="MM_swapImage('scores','','scores_over.png',0)" onMouseOver="MM_swapImage('scores','','scores_over.png',1)" onMouseOut="MM_swapImgRestore()"></a>
+   	  <a href="#"><img src="down_arrow.png" name="arrow" class="falloff3" id="arrow" onMouseDown="MM_swapImage('arrow','','arrow_down.png',0)" onMouseUp="MM_swapImage('arrow','','arrow_over.png',0)" onMouseOver="MM_swapImage('arrow','','arrow_over.png',1)" onMouseOut="MM_swapImgRestore()"></a>
+    </div>
+	<div id="myespn">
+   	  <a href="#"><img src="menu.png" name="menu" id="menu" onMouseDown="MM_swapImage('menu','','menu_down.png',0)" onMouseUp="MM_swapImage('menu','','menu_over.png',0)" onMouseOver="MM_swapImage('menu','','menu_over.png',1)" onMouseOut="MM_swapImgRestore()"></a>
+        <a href="#"><img src="my_espn.png"></a>
+    </div>
+</div>
+<div id="main">
+<div id="banner"><img src="aquaman.png"><img src="fullad.png" class="fullad" style="vertical-align: top; padding-left: 10px; padding-right: 10px">
+<div id="poll">
+<p style="background-color: #E5E5E5; text-align: center;"><strong>Which will come next ipsum or dolor?</strong></p> 
+  <p style="padding-left: 5px;"><input type="radio" name="example1"> Ipsum<br><br><input type="radio" name="example1"> Dolor</p><p style="vertical-align: bottom; text-align: center"><br><br><br><br><input type="submit" value="Vote"></p></div>
+  </div>
+  <div id="bannertext" class="widget-text"><h1 style="color: #F00">Aquaman Sees Light</h1>Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.</div>
+ <div id="poll2">
+<p style="background-color: #E5E5E5; text-align: center;"><strong>Which will come next ipsum or dolor?</strong></p> 
+  <p style="padding-left: 5px;"><input type="radio" name="example1"> Ipsum<br><br><input type="radio" name="example1"> Dolor</p><p style="vertical-align: bottom; text-align: center"><br><br><br><br><input type="submit" value="Vote"></p></div>
+  
+
+ <div id="widget-container">
+  <div class="widget-content toph">
+   <div class="widget-title">
+         Latest Sports Headlines
+   </div>
+   <div class="widget-text">
+         Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.
+        <p class="fullad">
+        Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus.</p>
+   </div>
+  </div>  
+
+  <div class="widget-content">
+   <div class="widget-title">
+         Top Trending Videos
+   </div>
+   <div class="widget-text">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem felis, rutrum sed sagittis non, 
+         suscipit quis mauris. Vivamus lobortis varius tempus. Etiam commodo sem quis enim bibendum bibendum. 
+         Aliquam eleifend, nisl eget faucibus hendrerit.
+   </div>
+  </div>  
+
+  <div class="widget-content">
+   <div class="widget-title">
+         Top Highlights of All Time
+   </div>
+   <div class="widget-text">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem felis, rutrum sed sagittis non, 
+         suscipit quis mauris. Vivamus lobortis varius tempus. Etiam commodo sem quis enim bibendum bibendum. 
+         Aliquam eleifend, nisl eget faucibus hendrerit.
+   </div>
+  </div> 
+ </div>
+ <div id="main-content">
+      <img src="320ad.png" class="ad320"><br>
+    <p> 
+       Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.
+    </p>
+      <p> 
+       Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.
+    </p>
+      <p> 
+       Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.
+    </p>
+      <p> 
+       Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.
+    </p>
+      <p> 
+       Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ut quam lacinia sit dignissim nulla bibendum. Maecenas se. In hac habitasse platea dictumst. Aenea volutpat nisi non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Don orci ut quam lacinia sit amet dignissim nulla bibendum. nulla metus. In hac habitasse platea dictumst. Aenean augue tristique. Maec nulla metus. In hac habitasse Aenean volutpat nisi non augue tristique.
+    </p>
+ </div> 
+</div> 
+
+</body>
+</html>
